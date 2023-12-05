@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+/* BACKGROUND COLORS */
+body {
+  background-color: purple;
+}
+
+/* HEADER */
+
+header {
+  display: Flex;
+}
+
+#header-img {
+  max-width: 10%;
+  border-radius: 10px;
+  opacity: 1;
+  padding-left: 5px;
+  display: flex;
+}
+
+#nav-bar {
+  display: flex;
+  position: fixed;
+  right: 85px;
+}
+
+ul {
+  display: flex;
+  gap: 15px;
+  padding-right: 5px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  font-weight: bold;
+  color: white;
+}
+
+/* BACKGROUND IMAGE */
+
+body {
+  background-image: url("https://www.shutterstock.com/shutterstock/photos/311871896/display_1500/stock-photo-solar-system-and-space-objects-elements-of-this-image-furnished-by-nasa-311871896.jpg");
+}
+
+/* SECTION ONE */
+
+.section-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  text-align: Center;
+}
+
+.main-description {
+  color: white;
+  font-weight: bold;
+  font-size: 26px;
+  padding-bottom: 10px;
+}
+
+form {
+  color: white;
+}
+
+input {
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+/* SECTION TWO */
+
+.section-two {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Earth-pic,
+.Saturn-pic,
+.Jupiter-pic {
+  max-width: 20%;
+  height: auto;
+}
+
+#Earth,
+#Saturn,
+#Jupiter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: darkbrown;
+}
+
+/* SECTION THREE */
+
+.video {
+  margin-top: 50px;
+  display: Flex;
+  justify-content: Center;
+  align-content: center;
+  margin-bottom: 50px;
+}
+
+/* FOOTER */
+
+footer {
+  color: white;
+  text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 400px) {
+  .section-two {
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(195, 204, 255);
+  }
+}
