@@ -141,7 +141,7 @@ footer {
   margin-bottom: 1.5em;
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES (applies on large screens) */
 
 @media (min-width: 400px) {
   .section-two {
@@ -152,6 +152,11 @@ footer {
   #Saturn,
   #Jupiter {
     color: rgb(14, 14, 15);
+  }
+
+  #nav-bar {
+    position: fixed;
+    z-index: 1;
   }
 
   /* ANIMATIONS (built within media query - large screens only) */
