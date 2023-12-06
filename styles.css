@@ -4,12 +4,15 @@
 /* BACKGROUND COLORS */
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
-.section-one {
-  background-color: gray;
-  opacity: 0.8;
+.section-one,
+.section-two {
+  background-color: rgba(165, 42, 42, 0.308);
+  opacity: 0.9;
 }
+
 /* HEADER */
 
 header {
@@ -59,17 +62,13 @@ body {
 /* SECTION ONE */
 
 .section-one {
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
   align-items: center;
-  margin-top: 100px;
-  text-align: Center;
-  width: 12rem;
-  min-width: 8rem;
-  position: relative;
-  left: 50vw;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .main-description {
@@ -86,15 +85,19 @@ form {
 input {
   border-radius: 10px;
   border: 2px solid black;
+  padding: 5px;
 }
 
 /* SECTION TWO */
 
 .section-two {
+  height: 100vh;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1rem;
+  justify-content: center;
+  align-content: center;
 }
 .Earth-pic,
 .Saturn-pic,
@@ -108,10 +111,10 @@ input {
 #Jupiter {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 18px;
+  font-size: 1.5rem;
+  gap: 1rem;
   font-weight: bold;
-  color: darkbrown;
+  color: white;
 }
 
 /* SECTION THREE */
@@ -132,6 +135,7 @@ footer {
   display: flex;
   justify-content: center;
   align-content: center;
+  text-align: center;
   margin-bottom: 1.5em;
 }
 
@@ -141,6 +145,10 @@ footer {
   .section-two {
     display: flex;
     flex-wrap: wrap;
-    color: rgb(195, 204, 255);
+  }
+  #Earth,
+  #Saturn,
+  #Jupiter {
+    color: rgb(14, 14, 15);
   }
 }
